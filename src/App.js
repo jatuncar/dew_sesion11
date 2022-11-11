@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+// importa la libreria React
+import React from 'react';
+// importa los estilos de la página
 import './App.css';
+// importa los módulos (.js) para llamar a los componentes
+import Menu from './Menu';
+import Header from './Header';
+import Pie from './Pie';
+import Seccion from './Seccion'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Menu/>
+      <Header/> 
+      <Seccion/>
+      <Pie/> 
     </div>
   );
 }
